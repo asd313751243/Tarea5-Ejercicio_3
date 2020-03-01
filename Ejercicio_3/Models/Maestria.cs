@@ -12,5 +12,6 @@ namespace Ejercicio_3.Models
         public int Duracion_Mes_Maestria { get; set; }
 
         public int CURP_Alumno { get; set; }
+
     }
 }

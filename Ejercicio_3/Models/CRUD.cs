@@ -7,6 +7,7 @@ namespace Ejercicio_3.Models
 {
     public class CRUD
     {
+
         public static List<Alumno> Alumnos { get; } = new List<Alumno>();
         public static List<Maestria> Maestrias { get; } = new List<Maestria>();
         public static List<Docente> Docentes { get; } = new List<Docente>();
@@ -37,6 +38,25 @@ namespace Ejercicio_3.Models
             Alumnos[id].Fecha_Nac_Alumno = a.Fecha_Nac_Alumno;
         }
 
+        public static void eliminarAlumno(int id)
+        {
+            Alumnos.RemoveAt(id);
+        }
+
+        public static bool evaluarParaeliminarAlumno(int id)
+        {
+            bool nope = true;
+            foreach (var item in Maestrias)
+            {
+                if (id == item.CURP_Alumno)
+                {
+                    nope = false;
+
+                }
+            }
+            return nope;
+        }
+
         //CRUD para la tabla Maestria---------------------------------------------------------------------
 
         public static void agregarMaestria(Maestria m)
@@ -58,6 +78,25 @@ namespace Ejercicio_3.Models
             Maestrias[id].Nombre_Maestria = m.Nombre_Maestria;
             Maestrias[id].Duracion_Mes_Maestria = m.Duracion_Mes_Maestria;
             Maestrias[id].CURP_Alumno = m.CURP_Alumno;
+        }
+
+        public static void eliminarMaestria(int id)
+        {
+            Maestrias.RemoveAt(id);
+        }
+
+        public static bool evaluarParaeliminarMaestria(int id)
+        {
+            bool nope = true;
+            foreach (var item in Maestria_Imparte_Docentes)
+            {
+                if (id == item.Id_Maestria)
+                {
+                    nope = false;
+
+                }
+            }
+            return nope;
         }
 
         //CRUD para la tabla Docente---------------------------------------------------------------------
@@ -82,6 +121,35 @@ namespace Ejercicio_3.Models
             Docentes[id].Tele_Docente = d.Tele_Docente;
         }
 
+        public static void eliminarDocente(int id)
+        {
+            Docentes.RemoveAt(id);
+        }
+
+        public static bool evaluarParaeliminarDocente(int id)
+        {
+            bool nope = true;
+            foreach (var item in Maestria_Imparte_Docentes)
+            {
+                if (id == item.Id_Docente)
+                {
+                    nope = false;
+
+                }
+            }
+
+            foreach (var item in Universidad_Tiene_Docentes)
+            {
+                if (id == item.Id_Docente)
+                {
+                    nope = false;
+
+                }
+            }
+
+            return nope;
+        }
+
         //CRUD para la tabla Universidad---------------------------------------------------------------------
 
         public static void agregarUniversidad(Universidad u)
@@ -101,6 +169,25 @@ namespace Ejercicio_3.Models
         public static void actualizarUniversidad(Universidad u, int id)
         {
             Universidads[id].Nombre_Universidad = u.Nombre_Universidad;
+        }
+
+        public static void eliminarUniversidad(int id)
+        {
+            Universidads.RemoveAt(id);
+        }
+
+        public static bool evaluarParaeliminarUniversidad(int id)
+        {
+            bool nope = true;
+            foreach (var item in Universidad_Tiene_Docentes)
+            {
+                if (id == item.Id_Universidad)
+                {
+                    nope = false;
+
+                }
+            }
+            return nope;
         }
 
         //CRUD para la tabla Maestria_Imparte_Docente---------------------------------------------------------------------
@@ -130,6 +217,11 @@ namespace Ejercicio_3.Models
             Maestria_Imparte_Docentes[id].Nombre_Docente = nom_docente;
         }
 
+        public static void eliminarMaestria_Imparte_Docente(int id)
+        {
+            Maestria_Imparte_Docentes.RemoveAt(id);
+        }
+
         //CRUD para la tabla Universidad_Tiene_Docente---------------------------------------------------------------------
 
         public static void agregarUniversidad_Tiene_Docente(Universidad_Tiene_Docente ud, string nom_universidad, string nom_docente)
@@ -155,6 +247,11 @@ namespace Ejercicio_3.Models
             Universidad_Tiene_Docentes[id].Id_Docente = ud.Id_Docente;
             Universidad_Tiene_Docentes[id].Nombre_Universidad = nom_universidad;
             Universidad_Tiene_Docentes[id].Nombre_Docente = nom_docente;
+        }
+
+        public static void eliminarUniversidad_Tiene_Docente(int id)
+        {
+            Universidad_Tiene_Docentes.RemoveAt(id);
         }
 
     }

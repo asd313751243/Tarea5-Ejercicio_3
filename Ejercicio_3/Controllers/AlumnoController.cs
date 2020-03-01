@@ -47,7 +47,22 @@ namespace Ejercicio_3.Controllers
             return View();
         }
 
-        public IActionResult Eliminar_alumno()
+        public IActionResult Eliminar_alumno_yes(int id)
+        {
+            bool recibir = CRUD.evaluarParaeliminarAlumno(id);
+            if (recibir == false)
+            {
+                return RedirectToAction("Eliminar_alumno_no");
+            }
+            else
+            {
+                CRUD.eliminarAlumno(id);
+            }
+
+            return View();
+        }
+
+        public IActionResult Eliminar_alumno_no()
         {
             return View();
         }

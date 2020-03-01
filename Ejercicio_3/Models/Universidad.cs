@@ -9,5 +9,6 @@ namespace Ejercicio_3.Models
     {
         public int Id_Universidad { get; set; }
         public string Nombre_Universidad { get; set; }
+
     }
 }

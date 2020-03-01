@@ -52,8 +52,9 @@ namespace Ejercicio_3.Controllers
             return View();
         }
 
-        public IActionResult Eliminar_maestria_imparte_docente()
+        public IActionResult Eliminar_maestria_imparte_docente(int id)
         {
+            CRUD.eliminarMaestria_Imparte_Docente(id);
             return View();
         }
 

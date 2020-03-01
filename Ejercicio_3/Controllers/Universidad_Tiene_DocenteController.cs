@@ -53,9 +53,11 @@ namespace Ejercicio_3.Controllers
             return View();
         }
 
-        public IActionResult Eliminar_universidad_tiene_docente()
+        public IActionResult Eliminar_universidad_tiene_docente(int id)
         {
+            CRUD.eliminarUniversidad_Tiene_Docente(id);
             return View();
         }
+
     }
 }

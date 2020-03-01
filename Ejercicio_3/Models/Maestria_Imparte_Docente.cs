@@ -12,5 +12,6 @@ namespace Ejercicio_3.Models
         public string Nombre_Maestria { get; set; }
         public int Id_Docente { get; set; }
         public string Nombre_Docente { get; set; }
+
     }
 }

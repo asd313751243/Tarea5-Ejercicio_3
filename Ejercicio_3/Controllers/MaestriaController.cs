@@ -47,7 +47,23 @@ namespace Ejercicio_3.Controllers
             return View();
         }
 
-        public IActionResult Eliminar_maestria()
+        public IActionResult Eliminar_maestria_yes(int id)
+        {
+            bool recibir = CRUD.evaluarParaeliminarMaestria(id);
+            if (recibir == false)
+            {
+                return RedirectToAction("Eliminar_maestria_no");
+            }
+            else
+            {
+                CRUD.eliminarMaestria(id);
+            }
+
+            return View();
+
+        }
+
+        public IActionResult Eliminar_maestria_no()
         {
             return View();
         }
