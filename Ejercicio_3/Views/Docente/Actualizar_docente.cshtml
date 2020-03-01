@@ -1,6 +1,21 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Docente
 @{
 }
 <h1>Update_Docente</h1>
+
+<form asp-controller="Docente" asp-action="Actualizar_docente" method="post">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label>Nombre</label>
+            <input asp-for="Nombre_Docente" type="text" class="form-control" value="@CRUD.Docentes[ViewBag.ID].Nombre_Docente" required>
+        </div>
+        <div class="input-group-prepend">
+            <label>Telefono</label>
+            <input asp-for="Tele_Docente" type="number" class="form-control" value="@CRUD.Docentes[ViewBag.ID].Tele_Docente" required>
+        </div>
+    </div>
+    <p>
+        <input class="btn btn-primary" type="submit" value="Agregar">
+    </p>
+
+</form>

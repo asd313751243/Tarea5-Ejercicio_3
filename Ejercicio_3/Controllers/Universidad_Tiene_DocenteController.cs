@@ -33,8 +33,23 @@ namespace Ejercicio_3.Controllers
             return View();
         }
 
-        public IActionResult Actualizar_universidad_tiene_docente()
+        public IActionResult Actualizar_universidad_tiene_docente(int id)
         {
+            ViewBag.ID = id;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Actualizar_universidad_tiene_docente (Universidad_Tiene_Docente ud, int id)
+        {
+            if (ModelState.IsValid)
+            {
+                string nom_universidad = CRUD.Universidads[ud.Id_Universidad].Nombre_Universidad;
+                string nom_docente = CRUD.Docentes[ud.Id_Docente].Nombre_Docente;
+
+                CRUD.actualizarUniversidad_Tiene_Docente(ud, id, nom_universidad, nom_docente);
+                return RedirectToAction("Ver_universidad_tiene_docente");
+            }
             return View();
         }
 

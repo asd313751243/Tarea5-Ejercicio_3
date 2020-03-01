@@ -30,8 +30,20 @@ namespace Ejercicio_3.Controllers
             return View();
         }
 
-        public IActionResult Actualizar_maestria()
+        public IActionResult Actualizar_maestria(int id)
         {
+            ViewBag.ID = id;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Actualizar_maestria (Maestria m, int id)
+        {
+            if (ModelState.IsValid)
+            {
+                CRUD.actualizarMaestria(m, id);
+                return RedirectToAction("Ver_maestria");
+            }
             return View();
         }
 

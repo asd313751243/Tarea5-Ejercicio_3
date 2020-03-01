@@ -64,7 +64,7 @@ using Ejercicio_3.Models;
             WriteLiteral("<h1>Lista_Alumno</h1>\r\n\r\n");
             EndContext();
             BeginContext(155, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7070bfb5c174c06ab05c2fba5487c27", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "508d3ab154d9464897c25a317d33e740", async() => {
                 BeginContext(246, 7, true);
                 WriteLiteral("Agregar");
                 EndContext();
@@ -152,7 +152,7 @@ using Ejercicio_3.Models;
             WriteLiteral("</td>\r\n                <td>");
             EndContext();
             BeginContext(852, 143, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "12cdf3fd46b24166b7a73778ef73ea12", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34820b961aaf4750a3e6ad3da465a953", async() => {
                 BeginContext(981, 10, true);
                 WriteLiteral("Actualizar");
                 EndContext();
@@ -192,7 +192,7 @@ using Ejercicio_3.Models;
             WriteLiteral("</td>\r\n                <td>");
             EndContext();
             BeginContext(1022, 138, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10a288bac65e48c59bf5a1c72612048b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "498ecbd622624391a0ef6d521f37a96a", async() => {
                 BeginContext(1148, 8, true);
                 WriteLiteral("Eliminar");
                 EndContext();

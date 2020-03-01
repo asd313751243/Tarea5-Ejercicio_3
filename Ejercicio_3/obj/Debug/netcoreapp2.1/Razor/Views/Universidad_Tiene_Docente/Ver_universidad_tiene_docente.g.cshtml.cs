@@ -64,7 +64,7 @@ using Ejercicio_3.Models;
             WriteLiteral("<h1>Lista_Universidad_Docente</h1>\r\n\r\n");
             EndContext();
             BeginContext(168, 140, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "97f74a0a9b2544ad893e9578f065cb62", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "908b6ee3925b406a809cd3816d745d9c", async() => {
                 BeginContext(297, 7, true);
                 WriteLiteral("Agregar");
                 EndContext();
@@ -163,7 +163,7 @@ using Ejercicio_3.Models;
             WriteLiteral("</td>\r\n                <td>");
             EndContext();
             BeginContext(1170, 211, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffc5cb9fe4346439540019c5b6c35a4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b66a47fc6e324abc9f215229643d8578", async() => {
                 BeginContext(1367, 10, true);
                 WriteLiteral("Actualizar");
                 EndContext();
@@ -203,7 +203,7 @@ using Ejercicio_3.Models;
             WriteLiteral("</td>\r\n                <td>");
             EndContext();
             BeginContext(1408, 206, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b35b9190b2d54af383161148e10b0bfd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91febeca1faf490d9ff2cae1ee2a8a2b", async() => {
                 BeginContext(1602, 8, true);
                 WriteLiteral("Eliminar");
                 EndContext();

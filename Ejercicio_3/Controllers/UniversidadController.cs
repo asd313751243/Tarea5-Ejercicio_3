@@ -30,8 +30,19 @@ namespace Ejercicio_3.Controllers
             return View();
         }
 
-        public IActionResult Actualizar_universidad()
+        public IActionResult Actualizar_universidad(int id)
         {
+            ViewBag.ID = id;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Actualizar_universidad(Universidad u, int id)
+        {
+            if (ModelState.IsValid)
+            {
+                CRUD.actualizarUniversidad(u, id);
+            }
             return View();
         }
 

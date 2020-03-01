@@ -64,7 +64,7 @@ using Ejercicio_3.Models;
             WriteLiteral("<h1>Lista_Maestria_Docente</h1>\r\n\r\n");
             EndContext();
             BeginContext(165, 138, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34763edfd78c43a5bef63e83457c4ba2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f588748aab0a495b825744c1cc2abc7d", async() => {
                 BeginContext(292, 7, true);
                 WriteLiteral("Agregar");
                 EndContext();
@@ -163,7 +163,7 @@ using Ejercicio_3.Models;
             WriteLiteral("</td>\r\n            <td>");
             EndContext();
             BeginContext(1112, 205, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13f46fd89e674d4ea5de724f0cbc45f9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c11ebf7c814c4df6a5c203bd4a2c69db", async() => {
                 BeginContext(1303, 10, true);
                 WriteLiteral("Actualizar");
                 EndContext();
@@ -203,7 +203,7 @@ using Ejercicio_3.Models;
             WriteLiteral("</td>\r\n            <td>");
             EndContext();
             BeginContext(1340, 200, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "303fc3d2b8d543bbb10930f0a12eafb2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a3a75b541594fe8989a8819228250f5", async() => {
                 BeginContext(1528, 8, true);
                 WriteLiteral("Eliminar");
                 EndContext();

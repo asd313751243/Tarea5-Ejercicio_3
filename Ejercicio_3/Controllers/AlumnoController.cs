@@ -30,8 +30,20 @@ namespace Ejercicio_3.Controllers
             return View();
         }
 
-        public IActionResult Actualizar_alumno()
+        public IActionResult Actualizar_alumno(int id)
         {
+            ViewBag.ID = id;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Actualizar_alumno (Alumno a, int id)
+        {
+            if (ModelState.IsValid)
+            {
+                CRUD.actualizarAlumno(a, id);
+                return RedirectToAction("Ver_alumno");
+            }
             return View();
         }
 

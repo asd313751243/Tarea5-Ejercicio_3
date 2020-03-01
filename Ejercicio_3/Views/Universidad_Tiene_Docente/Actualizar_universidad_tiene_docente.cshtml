@@ -1,6 +1,49 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Universidad_Tiene_Docente
 @{
 }
 <h1>Update_Universidad_Docente</h1>
+
+<form asp-controller="Universidad_Tiene_Docente" asp-action="Actualizar_universidad_tiene_docente" method="post">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label>Universidad</label>
+            <label asp-for="Id_Universidad" class="control-label"></label>
+            <select asp-for="Id_Universidad" class="form-control">
+                @foreach (var item in CRUD.Universidads)
+                {
+                    if (item.Id_Universidad == CRUD.Universidad_Tiene_Docentes[ViewBag.ID].Id_Universidad)
+                    {
+                        <option value="@item.Id_Universidad" selected="selected">@item.Id_Universidad - @item.Nombre_Universidad</option>
+                    }
+                    else
+                    {
+                        <option value="@item.Id_Universidad">@item.Id_Universidad - @item.Nombre_Universidad</option>
+                    }
+                }
+            </select>
+            <span asp-validation-for="Id_Universidad" class="text-danger"></span>
+        </div>
+        <div class="input-group-prepend">
+            <label>Docente</label>
+            <label asp-for="Id_Docente" class="control-label"></label>
+            <select asp-for="Id_Docente" class="form-control">
+                @foreach (var item in CRUD.Docentes)
+                {
+                    if (item.Id_Docente == CRUD.Universidad_Tiene_Docentes[ViewBag.ID].Id_Docente)
+                    {
+                        <option value="@item.Id_Docente" selected="selected">@item.Id_Docente - @item.Nombre_Docente</option>
+                    }
+                    else
+                    {
+                        <option value="@item.Id_Docente">@item.Id_Docente - @item.Nombre_Docente</option>
+                    }
+                }
+            </select>
+            <span asp-validation-for="Id_Docente" class="text-danger"></span>
+        </div>
+    </div>
+    <p>
+        <input class="btn btn-primary" type="submit" value="Agregar">
+    </p>
+
+</form>

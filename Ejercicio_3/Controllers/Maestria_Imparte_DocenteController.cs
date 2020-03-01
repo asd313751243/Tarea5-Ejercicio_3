@@ -32,8 +32,23 @@ namespace Ejercicio_3.Controllers
             return View();
         }
 
-        public IActionResult Actualizar_maestria_imparte_docente()
+        public IActionResult Actualizar_maestria_imparte_docente(int id)
         {
+            ViewBag.ID = id;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Actualizar_maestria_imparte_docente(Maestria_Imparte_Docente md, int id)
+        {
+            if (ModelState.IsValid)
+            {
+                string nom_maestria = CRUD.Maestrias[md.Id_Maestria].Nombre_Maestria;
+                string nom_docente = CRUD.Docentes[md.Id_Docente].Nombre_Docente;
+
+                CRUD.actualizarMaestria_Imparte_Docente(md, id, nom_maestria, nom_docente);
+                return RedirectToAction("Ver_maestria_imparte_docente");
+            }
             return View();
         }
 
