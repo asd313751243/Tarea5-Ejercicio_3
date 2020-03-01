@@ -4,3 +4,33 @@
 @{
 }
 <h1>Lista_Maestria_Docente</h1>
+
+<a class="btn btn-success" asp-area="" asp-controller="Maestria_Imparte_Docente" asp-action="Agregar_maestria_imparte_docente">Agregar</a>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID_Maestria_Docente</th>
+            <th scope="col">ID_Maestria</th>
+            <th scope="col">Nombre_Maestria</th>
+            <th scope="col">ID_Docente</th>
+            <th scope="col">Nombre_Docente</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var maestria_imparte_docente in CRUD.Maestria_Imparte_Docentes)
+        {
+        <tr>
+            <th scope="row">@maestria_imparte_docente.Id_Maestria_Docente</th>
+            <td>@maestria_imparte_docente.Id_Maestria</td>
+            <td>@maestria_imparte_docente.Nombre_Maestria</td>
+            <td>@maestria_imparte_docente.Id_Docente</td>
+            <td>@maestria_imparte_docente.Nombre_Docente</td>
+            <td><a class="btn btn-primary" asp-area="" asp-controller="Maestria_Imparte_Docente" asp-action="Actualizar_maestria_imparte_docente" asp-route-id="@maestria_imparte_docente.Id_Maestria_Docente">Actualizar</a></td>
+            <td><a class="btn btn-danger" asp-area="" asp-controller="Maestria_Imparte_Docente" asp-action="Eliminar_maestria_imparte_docente" asp-route-id="@maestria_imparte_docente.Id_Maestria_Docente">Eliminar</a></td>
+        </tr>
+        }
+
+    </tbody>
+
+</table>

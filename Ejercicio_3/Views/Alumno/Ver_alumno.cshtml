@@ -4,3 +4,31 @@
 @{
 }
 <h1>Lista_Alumno</h1>
+
+<a class="btn btn-success" asp-area="" asp-controller="Alumno" asp-action="Agregar_alumno">Agregar</a>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">CURD_Alumno</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Boleta</th>
+            <th scope="col">Fecha_Nacimiento</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var alumno in CRUD.Alumnos)
+        {
+            <tr>
+                <th scope="row">@alumno.CURP_Alumno</th>
+                <td>@alumno.Nombre_Alumno</td>
+                <td>@alumno.Boleta_Alumno</td>
+                <td>@alumno.Fecha_Nac_Alumno</td>
+                <td><a class="btn btn-primary" asp-area="" asp-controller="Alumno" asp-action="Actualizar_alumno" asp-route-id="@alumno.CURP_Alumno">Actualizar</a></td>
+                <td><a class="btn btn-danger" asp-area="" asp-controller="Alumno" asp-action="Eliminar_alumno" asp-route-id="@alumno.CURP_Alumno">Eliminar</a></td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
