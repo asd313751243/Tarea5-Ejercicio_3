@@ -59,7 +59,7 @@ using Ejercicio_3.Models;
             WriteLiteral("<center>\r\n    <h1>Debes Eliminar las Dependencias antes de eliminar el registro</h1>\r\n\r\n    <p>\r\n\r\n    </p>\r\n\r\n    ");
             EndContext();
             BeginContext(245, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6f41a4606894061ab2223e3e0579b00", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb96a71ea9f14626b61612c7057d081e", async() => {
                 BeginContext(322, 14, true);
                 WriteLiteral("Volver a Lista");
                 EndContext();

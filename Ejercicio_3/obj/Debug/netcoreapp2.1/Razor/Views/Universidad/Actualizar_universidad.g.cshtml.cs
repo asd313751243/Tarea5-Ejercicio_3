@@ -60,12 +60,12 @@ using Ejercicio_3.Models;
             WriteLiteral("<h1>Update_Universidad</h1>\r\n\r\n");
             EndContext();
             BeginContext(58, 478, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "984495b2f4ac4229aa22f0bf34070a79", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83687f67ace240608103b8b44b0c8348", async() => {
                 BeginContext(143, 128, true);
                 WriteLiteral("\r\n    <div class=\"input-group mb-3\">\r\n        <div class=\"input-group-prepend\">\r\n            <label>Nombre</label>\r\n            ");
                 EndContext();
                 BeginContext(271, 136, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "63e0679070184a6c855b5bfc5b3810e8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "164a8d1c9daf46ed93701f5a64defcb3", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();

@@ -59,7 +59,7 @@ using Ejercicio_3.Models;
             WriteLiteral("<center>\r\n    <h1>Registro Eliminado</h1>\r\n\r\n    <p>\r\n\r\n    </p>\r\n\r\n    ");
             EndContext();
             BeginContext(202, 93, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d8ce962ba5ea461e95e743ddf60341c2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0382a5d0955342e693833e2b01c835dd", async() => {
                 BeginContext(277, 14, true);
                 WriteLiteral("Volver a Lista");
                 EndContext();

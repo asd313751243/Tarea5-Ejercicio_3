@@ -62,7 +62,7 @@ using Ejercicio_3.Models;
             WriteLiteral("\r\n<center><h1>CRUD_MegaDB</h1></center>\r\n<p>\r\n\r\n</p>\r\n<center>");
             EndContext();
             BeginContext(107, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab83277ff893491c9964f172f9dedafc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29f56980c6324285a86d51fe154b60dc", async() => {
                 BeginContext(182, 15, true);
                 WriteLiteral("Empezar el crud");
                 EndContext();

@@ -21,11 +21,11 @@ namespace Ejercicio_3.Models
         {
             if (Alumnos.Count > 0)
             {
-                a.CURP_Alumno = Alumnos.Count;
+                a.Boleta_Alumno = Alumnos.Count;
             }
             else if (Alumnos.Count == 0)
             {
-                a.CURP_Alumno = 0;
+                a.Boleta_Alumno = 0;
             }
 
             Alumnos.Add(a);
@@ -34,7 +34,7 @@ namespace Ejercicio_3.Models
         public static void actualizarAlumno(Alumno a, int id)
         {
             Alumnos[id].Nombre_Alumno = a.Nombre_Alumno;
-            Alumnos[id].Boleta_Alumno = a.Boleta_Alumno;
+            Alumnos[id].CURP_Alumno = a.CURP_Alumno;
             Alumnos[id].Fecha_Nac_Alumno = a.Fecha_Nac_Alumno;
         }
 
@@ -48,7 +48,7 @@ namespace Ejercicio_3.Models
             bool nope = true;
             foreach (var item in Maestrias)
             {
-                if (id == item.CURP_Alumno)
+                if (id == item.Boleta_Alumno)
                 {
                     nope = false;
 
@@ -77,7 +77,7 @@ namespace Ejercicio_3.Models
         {
             Maestrias[id].Nombre_Maestria = m.Nombre_Maestria;
             Maestrias[id].Duracion_Mes_Maestria = m.Duracion_Mes_Maestria;
-            Maestrias[id].CURP_Alumno = m.CURP_Alumno;
+            Maestrias[id].Boleta_Alumno = m.Boleta_Alumno;
         }
 
         public static void eliminarMaestria(int id)

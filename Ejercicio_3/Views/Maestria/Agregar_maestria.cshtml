@@ -15,14 +15,14 @@
         </div>
         <div class="input-group-prepend">
             <label>Alumno</label>
-            <label asp-for="CURP_Alumno" class="control-label"></label>
-            <select asp-for="CURP_Alumno" class="form-control">
+            <!--<label asp-for="Boleta_Alumno" class="control-label"></label>-->
+            <select asp-for="Boleta_Alumno" class="form-control">
                 @foreach (var item in CRUD.Alumnos)
                 {
-                    <option value="@item.CURP_Alumno">@item.CURP_Alumno - @item.Nombre_Alumno</option>
+                    <option value="@item.Boleta_Alumno">@item.Boleta_Alumno - @item.Nombre_Alumno</option>
                 }
             </select>
-            <span asp-validation-for="CURP_Alumno" class="text-danger"></span>
+            <span asp-validation-for="Boleta_Alumno" class="text-danger"></span>
         </div>
     </div>
     <p>

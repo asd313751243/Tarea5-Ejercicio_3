@@ -12,7 +12,7 @@
             <th scope="col">ID_Maestria</th>
             <th scope="col">Nombre</th>
             <th scope="col">Duracion (mes)</th>
-            <th scope="col">CURP_Alumno</th>
+            <th scope="col">Boleta_Alumno</th>
         </tr>
     </thead>
     <tbody>
@@ -23,7 +23,7 @@
                 <th scope="row">@maestria.Id_Maestria</th>
                 <td>@maestria.Nombre_Maestria</td>
                 <td>@maestria.Duracion_Mes_Maestria</td>
-                <td>@maestria.CURP_Alumno</td>
+                <td>@maestria.Boleta_Alumno</td>
                 <td><a class="btn btn-primary" asp-area="" asp-controller="Maestria" asp-action="Actualizar_maestria" asp-route-id="@maestria.Id_Maestria">Actualizar</a></td>
                 <td><a class="btn btn-danger" asp-area="" asp-controller="Maestria" asp-action="Eliminar_maestria_yes" asp-route-id="@maestria.Id_Maestria">Eliminar</a></td>
             </tr>

@@ -11,7 +11,7 @@ namespace Ejercicio_3.Models
         public string Nombre_Maestria { get; set; }
         public int Duracion_Mes_Maestria { get; set; }
 
-        public int CURP_Alumno { get; set; }
+        public int Boleta_Alumno { get; set; }
 
     }
 }
